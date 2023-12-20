@@ -12,7 +12,7 @@ class GeneradorDeMatriz {
   }
 
   // Generación de la matriz
-  GeneracionDeMatriz() {
+  generacionDeMatriz() {
     for (let i = 0; i < this.filas; i++) {
       const fila = [];
       fila.push(this.getRandomNumber(0, this.max));
@@ -34,14 +34,14 @@ class GeneradorDeMatriz {
     }
   }
 
-  MostrarMatriz() {
+  mostrarMatriz() {
     console.log(this.matriz);
   }
 }
 
 const generadorDeMatriz = new GeneradorDeMatriz(10, 3, 10);
 
-generadorDeMatriz.GeneracionDeMatriz();
-generadorDeMatriz.MostrarMatriz();
+generadorDeMatriz.generacionDeMatriz();
+generadorDeMatriz.mostrarMatriz();
 
-/* hola */
+module.exports = GeneradorDeMatriz;
